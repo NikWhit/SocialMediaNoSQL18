@@ -3,7 +3,7 @@
 // Use Ctrl+Space inside a snippet or a string literal to trigger completions.
 
 const database = 'Users';
-const collection = 'Users';
+const collection = 'SocialUsers';
 
 // Create a new database.
 use(database);
@@ -11,7 +11,7 @@ use(database);
 // Create a new collection.
 db.createCollection(collection);
 
-const userSchema = new Schema(
+const userSchema = new mongoose.Schema(
     {
       username: {
         type: String,
@@ -27,11 +27,11 @@ const userSchema = new Schema(
         match: [/.+@.+\..+/, "Must match an email address!"],
       },
         Thought: [{ 
-            type: Schema.Thought,
+            type: Thought,
             ref: 'Thoughts'
           }],
         Friends: [{ 
-          type: Schema.Types.ObjectId, 
+          type: Types.ObjectId, 
           ref: 'Friends'
         }],
       },
