@@ -24,10 +24,15 @@ I know that the requirements are to make the certain changes on Insomnia. But I 
 
 ## Credits
 The team from my Project 3. Eden Lewis, Max Doren, and Liz Hawkins
+
 I credit the writers of the materials learned in this Coding-Boot-Camp Course.
+
  https://mongoosejs.com/docs/guide.html
+ 
  https://mongoosejs.com/docs/models.html
+ 
  https://mongoosejs.com/docs/
+ 
  https://www.mongodb.com/docs/compass/current/
 
 
