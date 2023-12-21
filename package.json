@@ -1,24 +1,20 @@
 {
-  "name": "Social-Media-NoSQL",
-  "version": "1.0.1",
-  "description": "",
+  "name": "social_media_api",
+  "version": "1.0.0",
+  "description": "database for social media",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "keywords": [],
+  "author": "",
   "license": "ISC",
   "dependencies": {
-    "cors": "^2.8.5",
-    "dotenv": "^16.3.1",
+    "couchbase": "^4.2.8",
     "express": "^4.18.2",
     "moment": "^2.29.4",
-    "mongod": "^6.3.0",
-    "mongoose": "^7.0.2",
-    "schema": "^0.2.1"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.9"
+    "mongoose": "^8.0.3",
+    "sequelize": "^6.35.2"
   }
 }
