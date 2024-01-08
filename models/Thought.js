@@ -1,9 +1,9 @@
-const mongoose = require('mongoose');
+const { Schema, model } = require('mongoose');
 const moment = require('moment');
-const reactionsSchema = require('./Reactions');
+const reactionSchema = require('./Reaction');
 
 //Schema for what makes up a thought
-const thoughtsSchema = new mongoose.Schema(
+const thoughtSchema = new Schema(
     {
 //Content and criteria for the ThoughtSchema
     thoughtText: {
@@ -25,7 +25,7 @@ const thoughtsSchema = new mongoose.Schema(
             required: true,
         }],
 //Array dof nested docs created with the reactionSchema
-    reactions: [reactionsSchema]
+    reactions: [reactionSchema]
 },
 {
         toJSON: {
@@ -34,11 +34,11 @@ const thoughtsSchema = new mongoose.Schema(
         },
         id: false,
         });
-thoughtsSchema.virtual('reactionCount')
+thoughtSchema.virtual('reactionCount')
 .get(function() {
-    return this.reaction.length;    
+    return this.reactions.length;    
 });
 
-const Thoughts = mongoose.model('thoughts', thoughtsSchema);
-module.exports = Thoughts;
+const Thought = model('Thought', thoughtSchema);
+module.exports = Thought;
 

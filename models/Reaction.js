@@ -1,13 +1,10 @@
-const mongoose = require('mongoose');
+const { Schema, Types } = require('mongoose');
 const moment = require('moment');
 
-const reactionsSchema = new mongoose.Schema(
+const reactionSchema = new Schema(
   {
     reactionId: {
-      type: mongoose.Schema.Types.ObjectId,
-      index: true,
-      required: true,
-      auto: true,
+      type: Schema.Types.ObjectId,
       default: () => new Types.ObjectId()
     },
     reactionBody: {
@@ -35,4 +32,4 @@ const reactionsSchema = new mongoose.Schema(
 );
 
 // const Reactions = mongoose.model('reactions', reactionsSchema);
-module.exports = reactionsSchema;
+module.exports = reactionSchema;
