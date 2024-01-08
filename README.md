@@ -25,6 +25,8 @@ I know that the requirements are to make the certain changes on Insomnia. But I 
 ## Credits
 The team from my Project 3. Eden Lewis, Max Doren, and Liz Hawkins
 
+I also received help from Sam Cordova of the Tutor's office. He assisted me in getting my new computer up-to-date on the programs and dependencies that we're using. The old computer I was using was dying and expiring. I realized much of my frustration was using a computer that I was told was fine for the course, but in reality was much older that one that I should've been using. 
+
 I credit the writers of the materials learned in this Coding-Boot-Camp Course.
 
  https://mongoosejs.com/docs/guide.html

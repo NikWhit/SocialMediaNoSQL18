@@ -1,21 +1,20 @@
 {
-  "name": "social_media_api",
+  "name": "socialmedianosql18",
   "version": "1.0.0",
-  "description": "database for social media",
-  "main": "index.js",
+  "description": "Hello, thank you for taking the time to checkout my resubmission of Challenge 18.  I've read through the comments of the grader, and took a lot into consideration and have reworked this. I hope that it passes minimum standard to pass this off.  Please note, that any lack of functionality may not be due to my lack of experience or effort with coding, it is truly due to my computer.  I believe that I've learned enough to know the basic level of functionality, and through time and experience I'll have the mastery down better. But I don't have time at my disposal at this moment. Please accept this resubmission with the knowledge that I've put an extreme amount of time and practice and study into learning the material. Thank you.",
+  "main": "server.js",
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cjs-loader": "^0.1.0",
-    "couchbase": "^4.2.8",
     "express": "^4.18.2",
-    "moment": "^2.29.4",
-    "mongoose": "^8.0.3",
-    "sequelize": "^6.35.2"
+    "mongoose": "^8.0.3"
   }
 }

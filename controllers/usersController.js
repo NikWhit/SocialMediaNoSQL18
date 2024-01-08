@@ -88,7 +88,7 @@ module.exports = {
     }},
   
   //making friends
-  async createNewFriend(req,res) {
+  async addFriend(req,res) {
     try {
       const user = await Users.findOndAndUpdate(
         {_id: req.params.userID},
@@ -127,7 +127,7 @@ module.exports = {
     }
   },
   // Remove thought from a user
-  async deleteFriend(req, res) {
+  async removeFriend(req, res) {
     try {
       const user = await Users.findOneAndUpdate(
         { _id: req.params.userId },
