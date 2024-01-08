@@ -127,4 +127,4 @@ async addReaction(req, res) {
     }
   },
 };
-module.export = thoughtController;
+module.exports = thoughtController;
